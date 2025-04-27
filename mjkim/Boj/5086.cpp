@@ -12,13 +12,13 @@ int main()
 	{
 		scanf("%d %d", &n1, &n2);
 
-		if (n1 == n2) break;
+		if (n1 == n2) break;  // 입력받은 수가 같으면 탈출
 
-		if (n2 % n1 == 0)
+		if (n2 % n1 == 0)  // 약수
 			printf("factor \n");
-		else if (n1 % n2 == 0)
+		else if (n1 % n2 == 0)  // 배수
 			printf("multiple \n");
-		else
+		else  // 둘 다 아님
 			printf("neither \n");
 	}
 
