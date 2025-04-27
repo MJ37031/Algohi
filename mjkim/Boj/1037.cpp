@@ -16,14 +16,14 @@ int main()
         {
             scanf("%d", &str[i]);
         }
-		if (n == 1)
+		if (n == 1)  //약수 1개면 제곱
 		{
 			num = pow(str[0], 2);
 		}
-		else if (n > 1)
+		else if (n > 1)  // 약수 1개 이상이면
 		{
 			int i, j, tmp;
-			for (i = 0; i < n - 1; i++)
+			for (i = 0; i < n - 1; i++)  // 오름차순 정렬
 			{
 				for (j = 1 + i; j < n; j++)
 				{
@@ -35,7 +35,7 @@ int main()
 					}
 				}
 			}
-			num = str[0] * str[n - 1];
+			num = str[0] * str[n - 1];  // 제일 작은 수 * 제일 큰 수 
 		}
 		printf("%d", num);
 	}
