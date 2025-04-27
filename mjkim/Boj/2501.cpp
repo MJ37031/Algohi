@@ -22,7 +22,7 @@ int main()
 		}
 	}
 	
-	if (x < k)
+	if (x < k)  // 약수 개수가 k보다 작으면 0 출력
 		printf("0");
 	else
 		printf("%d \n", arr[k - 1]);
